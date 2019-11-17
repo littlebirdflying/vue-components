@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>vue 通用组件库</title>
     <style>
-        * {margin:0; padding: 0; box-sizing: border-box;}
+        * {margin: 0; padding: 0; box-sizing: border-box;}
         html {
             --button-height: 32px;
             --font-size: 14px;
@@ -24,12 +24,22 @@
         body {
             font-size: var(--font-size)
         }
+        .icon {
+            width: 1em; height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+
     </style>
 </head>
 <body>
 <div id="app">
-    <m-button></m-button>
+    <m-button icon="settings" icon-position="right">按钮</m-button>
+    <m-button icon="settings" icon-position="left">按钮</m-button>
+    <m-button>按钮</m-button>
 </div>
 <script src="src/app.js"></script>
+<script src="//at.alicdn.com/t/font_1513145_yq5ubbftbhf.js"></script>
 </body>
 </html>
