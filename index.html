@@ -29,7 +29,7 @@
 </head>
 <body>
 <div id="app">
-    <m-button icon="settings" icon-position="right">按钮</m-button>
+    <m-button icon="settings" icon-position="right" :loading="loading1" @click="loading1 = !loading1">按钮</m-button>
     <m-button icon="settings" icon-position="left">按钮</m-button>
     <m-button>按钮</m-button>
 </div>
