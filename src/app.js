@@ -13,3 +13,10 @@ new Vue({
         loading1: true
     }
 })
+
+// 单元测试
+{
+    const Constructor = Vue.extend(Button)
+    const button = new Constructor()
+    button.$mount('#test')
+}
